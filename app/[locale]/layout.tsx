@@ -42,12 +42,12 @@ interface RootLayoutProps {
   params: { locale: string };
 }
 
-export default async function RootLayout({ children, params }: RootLayoutProps) {
+export default function RootLayout({ children, params }: RootLayoutProps) {
   const { locale } = params;
   let messages: Record<string, string> | null = null;
 
   try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
+    messages = require(`../../messages/${locale}.json`);
   } catch (error) {
     console.error(`Locale not found: ${locale}`, error);
   }
