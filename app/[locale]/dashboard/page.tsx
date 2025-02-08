@@ -17,7 +17,7 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
 
   const getData = async () => {
-    const response = await fetch('/api/userData', { // Panggil API Next.js
+    const response = await fetch('/api/userData', { 
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
       credentials: "include",
@@ -43,9 +43,9 @@ export default function DashboardPage() {
         <h1 className="text-2xl font-bold">{t("title")}</h1>
         <p className="mt-2 text-gray-600">{t("description")}</p>
         <hr />
-        {/* Card User Info */}
+
         <div className="mt-6 p-6 bg-gray-100 rounded-lg">
-          <h3 className="text-xl font-semibold text-gray-700">📝 Basic Information</h3>
+          <h3 className="text-xl font-semibold text-gray-700">📝 {tbi("title")}</h3>
           <div className="grid grid-cols-2 gap-4 mt-4">
             <p className="text-gray-700">
               <strong>👤 {tbi("name")}:</strong> {user?.name || <span className="text-gray-400 animate-pulse">Loading...</span>}

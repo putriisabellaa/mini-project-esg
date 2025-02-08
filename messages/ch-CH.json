@@ -39,8 +39,10 @@
       "employee": "员工",
       "purchasing": "采购",
       "finance": "财务",
-      "warehouse": "仓库"
+      "warehouse": "仓库",
+      "logout": "退出"
     },
+
     "ButtonLanguage": {
         "language": "语言",
         "indonesia": "印尼语",
@@ -48,6 +50,7 @@
         "mandarin": "中文"
     },
     "BasicInformation": {
+        "title" : "基本信息",
         "name": "姓名",
         "phone": "电话",
         "email": "电子邮件",

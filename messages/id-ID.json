@@ -39,7 +39,8 @@
       "employee": "Pegawai",
       "purchasing": "Pembelian",
       "finance": "Keuangan",
-      "warehouse": "Gudang"
+      "warehouse": "Gudang",
+      "logout": "Keluar"
     },
 
     "ButtonLanguage": {
@@ -49,6 +50,7 @@
         "mandarin": "Mandarin"
     },
     "BasicInformation":{
+        "title" : "Informasi Dasar",
         "name" : "Nama",
         "phone" : "Telepon",
         "email" : "Email",

@@ -1,4 +1,4 @@
-"use client"; // Menandakan bahwa komponen ini menggunakan hooks
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Sidebar() {
   const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false); // Menentukan apakah sudah di sisi klien
+  const [isClient, setIsClient] = useState(false); 
   const t = useTranslations("ListMenu");
   const router = useRouter();
   const lang = Cookies.get("NEXT_LOCALE");
@@ -42,7 +42,7 @@ export default function Sidebar() {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null; // Hindari rendering sebelum sisi klien siap
+  if (!isClient) return null; 
 
   return (
     <>
@@ -72,7 +72,7 @@ export default function Sidebar() {
           isSidebarOpen ? "block" : "hidden"
         } lg:block w-full md:w-64 bg-gray-100 text-gray-800 p-6 flex flex-col justify-between h-screen fixed lg:relative top-0 left-0 z-40`}
       >
-        {/* Logo di atas */}
+        
         <div className="mb-8 flex justify-center">
           <Image
             src="/images/logo-2.png"
@@ -83,7 +83,7 @@ export default function Sidebar() {
           />
         </div>
 
-        {/* Menu */}
+       
         <ul className="space-y-4 flex-1">
           {menuItems.map((item) => (
             <li key={item.path}>
@@ -101,12 +101,11 @@ export default function Sidebar() {
           ))}
         </ul>
 
-        {/* Button Logout */}
         <button
           className="bg-red-500 text-white w-full py-2 mt-4 rounded-md"
           onClick={handleLogout}
         >
-          Logout
+          {t("logout")}
         </button>
       </aside>
     </>

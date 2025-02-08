@@ -39,7 +39,8 @@
       "employee": "Employee",
       "purchasing": "Purchasing",
       "finance": "Finance",
-      "warehouse": "Warehouse"
+      "warehouse": "Warehouse",
+      "logout": "Logout"
     },
     "ButtonLanguage": {
         "language": "Language",
@@ -48,6 +49,7 @@
         "mandarin": "Chinese"
     },
     "BasicInformation":{
+        "title" : "Basic Information",
         "name" : "Name",
         "phone" : "Phone",
         "email" : "Email",
