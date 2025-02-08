@@ -45,7 +45,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
 
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch (_error) {
     console.error(`Locale not found: ${locale}, error`);
   }
 
