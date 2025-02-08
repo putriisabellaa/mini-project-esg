@@ -1,6 +1,4 @@
-
 import { NextResponse } from 'next/server';
-
 
 export async function POST(request: Request) {
   const { email, password } = await request.json();
@@ -18,8 +16,10 @@ export async function POST(request: Request) {
     if (!response.ok) {
       return NextResponse.json({ error: data.message || 'Login failed' }, { status: 401 });
     }
+
     return NextResponse.json({ data }, { status: 200 });
   } catch (error) {
+    console.error('Login error:', error);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }
 }

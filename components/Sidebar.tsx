@@ -4,15 +4,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
+import Image from "next/image";
 
 export default function Sidebar() {
   const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isClient, setIsClient] = useState(false); // Menentukan apakah sudah di sisi klien
-  const t = useTranslations('ListMenu');
-  const [error, setError] = useState('');
+  const t = useTranslations("ListMenu");
   const router = useRouter();
   const lang = Cookies.get("NEXT_LOCALE");
 
@@ -23,26 +23,26 @@ export default function Sidebar() {
     { name: t("finance"), path: `/${lang}/dashboard/finance` },
     { name: t("warehouse"), path: `/${lang}/dashboard/warehouse` },
   ];
+
   const handleLogout = async (e: React.FormEvent) => {
-      e.preventDefault();
-      const response = await fetch('/api/logout', { // Panggil API Next.js
-        method: 'get',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: "include",
-      });
-      if (response.ok) {
-        router.push('/');
-      } else {
-        console.log('Logout failed');
-      }
+    e.preventDefault();
+    const response = await fetch("/api/logout", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+    });
+    if (response.ok) {
+      router.push("/");
+    } else {
+      console.log("Logout failed");
     }
-    
-  // Set isClient menjadi true ketika komponen dimuat di sisi klien
+  };
+
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) return null; // Hindari rendering komponen sebelum sisi klien siap
+  if (!isClient) return null; // Hindari rendering sebelum sisi klien siap
 
   return (
     <>
@@ -73,8 +73,14 @@ export default function Sidebar() {
         } lg:block w-full md:w-64 bg-gray-100 text-gray-800 p-6 flex flex-col justify-between h-screen fixed lg:relative top-0 left-0 z-40`}
       >
         {/* Logo di atas */}
-        <div className="mb-8">
-          <img src="/images/logo-2.png" alt="Logo" className="mx-auto" />
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/images/logo-2.png"
+            alt="Company Logo"
+            width={150}
+            height={50}
+            priority
+          />
         </div>
 
         {/* Menu */}

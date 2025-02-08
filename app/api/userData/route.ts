@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
     // Ambil token dari cookie (server-side)
-    const cookieStore = await cookies();
+    const cookieStore = cookies();
     const cookieValue = cookieStore.get('token')?.value;
 
     if (!cookieValue) {
@@ -27,6 +27,7 @@ export async function GET() {
 
         return NextResponse.json({ data }, { status: 200 });
     } catch (error) {
+        console.error('Error fetching user data:', error);
         return NextResponse.json({ error: 'Server error' }, { status: 500 });
     }
 }

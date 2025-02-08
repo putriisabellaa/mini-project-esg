@@ -32,9 +32,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <Sidebar />
 
       {/* Konten utama */}
-      <main className="flex-1 p-6 bg-white text-gray-900">
+      <div className="flex-1 p-6 bg-white text-gray-900">
         {/* Navbar bagian atas */}
-        <header className="flex justify-between items-center mb-4">
+        <div className="flex justify-between items-center mb-4">
           {/* Dropdown untuk ganti bahasa */}
           <div className="relative ml-auto">
             <button
@@ -59,12 +59,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               </div>
             )}
           </div>
-        </header>
+        </div>
         
         <div className="p-4">
           <div className="bg-white shadow-lg rounded-lg p-6 border">{children}</div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

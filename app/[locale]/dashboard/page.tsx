@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function DashboardPage() {
   const t = useTranslations('Dashboard');
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const getData = async () => {
