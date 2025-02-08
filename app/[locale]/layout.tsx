@@ -1,5 +1,3 @@
-"use client"; // Tambahkan jika ini client component
-
 import type { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
