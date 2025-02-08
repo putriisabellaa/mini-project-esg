@@ -40,10 +40,10 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params: {locale}
-}: {
-  children: React.ReactNode;
-  params: {locale: string};
-}) {
+  }: {
+    children: React.ReactNode;
+    params: {locale: string};
+  }) {
 
   // const { locale } = params;
   //let messages: Record<string, string> | null = null;
