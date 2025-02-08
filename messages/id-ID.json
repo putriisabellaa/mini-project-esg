@@ -47,5 +47,12 @@
         "indonesia": "Indonesia",
         "english": "Inggris",
         "mandarin": "Mandarin"
+    },
+    "BasicInformation":{
+        "name" : "Nama",
+        "phone" : "Telepon",
+        "email" : "Email",
+        "address" : "Alamat"
     }
+    
 }

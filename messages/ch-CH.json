@@ -46,6 +46,12 @@
         "indonesia": "印尼语",
         "english": "英语",
         "mandarin": "中文"
+    },
+    "BasicInformation": {
+        "name": "姓名",
+        "phone": "电话",
+        "email": "电子邮件",
+        "address": "地址"
     }
 }
 

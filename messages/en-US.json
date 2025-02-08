@@ -46,5 +46,11 @@
         "indonesia": "Indonesian",
         "english": "English",
         "mandarin": "Chinese"
+    },
+    "BasicInformation":{
+        "name" : "Name",
+        "phone" : "Phone",
+        "email" : "Email",
+        "address" : "Address"
     }
 }

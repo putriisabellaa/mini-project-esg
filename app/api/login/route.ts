@@ -4,7 +4,7 @@ export async function POST(request: Request) {
   const { email, password } = await request.json();
 
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/sign-in', {
+    const response = await fetch('https://mini-project.be.aclasindo.net/api/sign-in', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),

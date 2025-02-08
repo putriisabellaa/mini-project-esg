@@ -5,6 +5,7 @@ import {getMessages} from 'next-intl/server';
 
 export function generateStaticParams() {
   return [{ locale: "en-US" }, { locale: "id-ID" }, { locale: "ch-CH" }];
+
 }
 
 const geistSans = Geist({
@@ -38,25 +39,16 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({
-  children,
-  params: {locale}
+  children
   }: {
     children: React.ReactNode;
-    params: {locale: string};
   }) {
 
   // const { locale } = params;
-  //let messages: Record<string, string> | null = null;
   const messages = await getMessages();
 
-  // try {
-  //   messages = (await import(`../../messages/${locale}.json`)).default;
-  // } catch (error) {
-  //   console.error(`Locale not found: ${locale}`, error);
-  // }
-
   return (
-    <html lang={locale}>
+    <html>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} antialiased`}
       >

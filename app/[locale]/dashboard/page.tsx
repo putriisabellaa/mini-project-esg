@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 export default function DashboardPage() {
   const t = useTranslations('Dashboard');
+  const tbi = useTranslations('BasicInformation');
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -39,16 +40,16 @@ export default function DashboardPage() {
           <h3 className="text-xl font-semibold text-gray-700">📝 Basic Information</h3>
           <div className="grid grid-cols-2 gap-4 mt-4">
             <p className="text-gray-700">
-              <strong>👤 Nama:</strong> {user?.name || <span className="text-gray-400 animate-pulse">Loading...</span>}
+              <strong>👤 {tbi("name")}:</strong> {user?.name || <span className="text-gray-400 animate-pulse">Loading...</span>}
             </p>
             <p className="text-gray-700">
-              <strong>📧 Email:</strong> {user?.email || <span className="text-gray-400 animate-pulse">Loading...</span>}
+              <strong>📧 {tbi("email")}:</strong> {user?.email || <span className="text-gray-400 animate-pulse">Loading...</span>}
             </p>
             <p className="text-gray-700">
-              <strong>📞 Phone:</strong> {user?.phone_number || <span className="text-gray-400 animate-pulse">Loading...</span>}
+              <strong>📞 {tbi("phone")}:</strong> {user?.phone_number || <span className="text-gray-400 animate-pulse">Loading...</span>}
             </p>
             <p className="text-gray-700">
-              <strong>📍 Address:</strong> {user?.address || <span className="text-gray-400 animate-pulse">Loading...</span>}
+              <strong>📍 {tbi("address")}:</strong> {user?.address || <span className="text-gray-400 animate-pulse">Loading...</span>}
             </p>
           </div>
         </div>

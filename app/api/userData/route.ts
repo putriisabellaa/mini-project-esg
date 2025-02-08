@@ -11,7 +11,7 @@ export async function GET() {
     }
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/user', {
+        const response = await fetch('https://mini-project.be.aclasindo.net/api/user', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
