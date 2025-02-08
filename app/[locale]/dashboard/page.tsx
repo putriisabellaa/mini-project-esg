@@ -2,10 +2,18 @@
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 
+interface User {
+  name: string,
+  email: string,
+  phone_number: string,
+  address: string
+}
+
 export default function DashboardPage() {
+
   const t = useTranslations('Dashboard');
   const tbi = useTranslations('BasicInformation');
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   const getData = async () => {
