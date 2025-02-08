@@ -1,0 +1,52 @@
+{
+    "Login": {
+      "title": "登录",
+      "email": "电子邮件",
+      "password": "密码",
+      "description": "登录您的账户",
+      "inputEmail" : "输入邮箱",
+      "inputPassword" : "输入密码",
+      "buttonLogin" : "登录"
+    },
+
+    "Dashboard": {
+        "title": "欢迎来到仪表板",
+        "description": "这是仪表板页面"
+    },
+
+    "Employee": {
+      "title": "欢迎来到员工页面",
+      "description": "这是员工页面"
+    },
+
+    "Purchasing": {
+      "title": "欢迎来到采购页面",
+      "description": "这是采购页面"
+    },
+
+    "Finance": {
+      "title": "欢迎来到财务页面",
+      "description": "这是财务页面"
+    },
+
+    "Warehouse": {
+      "title": "欢迎来到仓库页面",
+      "description": "这是仓库页面"
+    },
+
+    "ListMenu": {
+      "dashboard": "仪表板",
+      "employee": "员工",
+      "purchasing": "采购",
+      "finance": "财务",
+      "warehouse": "仓库"
+    },
+    "ButtonLanguage": {
+        "language": "语言",
+        "indonesia": "印尼语",
+        "english": "英语",
+        "mandarin": "中文"
+    }
+}
+
+    

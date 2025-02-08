@@ -1,0 +1,50 @@
+{
+    "Login": {
+      "title": "Sign In",
+      "email": "Email",
+      "password": "Password",
+      "description": "Sign in to your account",
+      "inputEmail" : "Enter Email",
+      "inputPassword" : "Enter Password",
+      "buttonLogin" : "Sign In"
+    },
+
+    "Dashboard": {
+        "title": "Welcome to Dashboard",
+        "description": "This is Dashboard Page"
+    },
+
+    "Employee": {
+      "title": "Welcome to Employee",
+      "description": "This is Employee Page"
+    },
+
+    "Purchasing": {
+      "title": "Welcome to Purchasing",
+      "description": "This is Purchasing Page"
+    },
+
+    "Finance": {
+      "title": "Welcome to Finance",
+      "description": "This is Finance Page"
+    },
+
+    "Warehouse": {
+      "title": "Welcome to Warehouse",
+      "description": "This is Warehouse Page"
+    },
+
+    "ListMenu": {
+      "dashboard": "Dashboard",
+      "employee": "Employee",
+      "purchasing": "Purchasing",
+      "finance": "Finance",
+      "warehouse": "Warehouse"
+    },
+    "ButtonLanguage": {
+        "language": "Language",
+        "indonesia": "Indonesian",
+        "english": "English",
+        "mandarin": "Chinese"
+    }
+}

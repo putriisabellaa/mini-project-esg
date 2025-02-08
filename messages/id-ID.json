@@ -1,0 +1,51 @@
+{
+    "Login": {
+      "title": "Masuk",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "description": "Masuk ke akun Anda",
+      "inputEmail" : "Masukkan Email",
+      "inputPassword" : "Masukkan Kata Sandi",
+      "buttonLogin" : "Masuk"
+    },
+
+    "Dashboard": {
+        "title": "Selamat datang di Dasbor",
+        "description": "Ini adalah Halaman Dasbor"
+    },
+
+    "Employee": {
+      "title": "Selamat datang di Pegawai",
+      "description": "Ini adalah Halaman Pegawai"
+    },
+
+    "Purchasing": {
+      "title": "Selamat datang di Pembelian",
+      "description": "Ini adalah Halaman Pembelian"
+    },
+
+    "Finance": {
+      "title": "Selamat datang di Keuangan",
+      "description": "Ini adalah Halaman Keuangan"
+    },
+
+    "Warehouse": {
+      "title": "Selamat datang di Gudang",
+      "description": "Ini adalah Halaman Gudang"
+    },
+
+    "ListMenu": {
+      "dashboard": "Dasbor",
+      "employee": "Pegawai",
+      "purchasing": "Pembelian",
+      "finance": "Keuangan",
+      "warehouse": "Gudang"
+    },
+
+    "ButtonLanguage": {
+        "language": "Bahasa",
+        "indonesia": "Indonesia",
+        "english": "Inggris",
+        "mandarin": "Mandarin"
+    }
+}
