@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini Project PT. Eagle Sporting Goods
+## 📌 Deskripsi Proyek  
+Mini proyek berbasis web untuk technical test yang dikembangkan menggunakan **Laravel (Backend) dan Next.js (Frontend)**, serta **MySQL** sebagai database. Sistem ini memiliki fitur autentikasi menggunakan **JWT**, dashboard dengan beberapa menu utama, logout, dan dukungan multi-bahasa (**Indonesia, Inggris, Mandarin**).
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Teknologi yang Digunakan  
 
+### **Frontend (Next.js)**
+- Next.js 
+- Typescript
+- i18n (Internationalization) untuk multi-bahasa
+- Vercel (Deployment)
+
+---
+
+## 🔑 Fitur Utama  
+
+### **1️⃣ Login dengan JWT Authentication**  
+- Pengguna bisa login dengan email dan password.  
+- Jika berhasil, backend Laravel akan mengirimkan **JWT token** ke frontend.  
+- Token ini digunakan untuk mengakses halaman dashboard.  
+
+### **2️⃣ Dashboard (Hanya Tampilan Saja)**  
+Setelah login, pengguna akan diarahkan ke dashboard yang berisi menu berikut:  
+✅ **Dashboard** berisi informasi dasar pengguna  
+✅ **Employee**  
+✅ **Purchasing**  
+✅ **Finance**  
+✅ **Warehouse**  
+
+### **3️⃣ Logout System**  
+- Pengguna bisa logout dengan mengklik tombol **Logout** di dashboard.  
+- JWT token akan dihapus dari local storage, sehingga pengguna harus login kembali untuk mengakses sistem.  
+
+### **4️⃣ Dukungan Multi-Bahasa**  
+- Sistem mendukung **3 bahasa**: **Indonesia, Inggris, Mandarin**.  
+- Pengguna dapat mengganti bahasa melalui tombol pilihan bahasa.  
+- Implementasi menggunakan **i18n** di Next.js untuk mengganti teks sesuai bahasa yang dipilih.  
+
+---
+
+## ⚙️ Instalasi & Menjalankan Proyek  
+
+### **1️⃣ Clone Repository**  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/putriisabellaa/mini-project-esg.git
+cd mini-project-esg
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **2️⃣ Menjalankan Frontend (Next.js)**  
+```bash
+npm install
+npm run dev
